@@ -1,0 +1,16 @@
+<h1>******** Welcome to the longest word-game! ********</h1>
+<h3>Here is your grid:</h3>
+
+
+<div class="letters"><%= @letters %></div>
+
+</br>
+
+<form action="/score">Combine the letters to form the longest word you find:</label>
+  <input type="text" id="word_input" name="query" placeholder="Enter your word here">
+  <input type="hidden" name="start_time" value=" <%= Time.now%>">
+  <input type="submit" value="Go on!">
+  <input type="hidden" value="letters" name="letters">
+</form>
+
+
